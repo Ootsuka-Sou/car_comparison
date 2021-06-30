@@ -15,7 +15,11 @@ class ApplicationController < ActionController::Base
     def configure_permitted_parameters
         #devise_parameter_samotizer.permit(追加したいメソッドの種類, keys, [追加したいパラメーター名])
         devise_parameter_sanitizer.permit(:sign_up, keys: [:name])
-        devise_parameter_sanitizer.permit(:account_update, keys: [:name, :profile])
+        devise_parameter_sanitizer.permit(:account_update, keys: [:name])
+    end
+    
+    def update_resource(resource, params)
+        resource.update_without_password(params)
     end
     
 end

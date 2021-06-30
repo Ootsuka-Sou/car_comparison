@@ -20,11 +20,6 @@
                 <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
             </li>
             
-            <li class="nav-item mr-5">
-                <%= link_to mypage_users_path, class: "nav-link" do %>
-                   <i class="fas fa-user mr-1"></i><label>マイページ</label>
-                <% end %>
-            </li>
             
             <% else %>
             <li class="nav-item">

@@ -19,12 +19,13 @@
 @import "devise";
 
 main {
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 60px);
     overflow: hidden;
+    padding-top: 60px;
 }
 
 header {
-    height: 60px;
+    height: 80px;
 }
 
 footer {

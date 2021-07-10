@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :grades
   resources :cars
   devise_for :users, controllers: { registrations: 'registrations' }
 get "users/show" => "users#show"

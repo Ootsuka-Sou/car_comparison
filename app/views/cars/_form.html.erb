@@ -12,8 +12,18 @@
   <% end %>
 
   <div class="field form-group">
-    <%= form.label :name %>
-    <%= form.number_field :name, class: "form-control" %>
+    <%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :name, :spacia %>
+      スペーシア
+    <% end %>
+    <%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :name, :n_box %>
+      N-BOX
+    <% end %>
+    <%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :name, :tanto %>
+      タント
+    <% end %>
   </div>
 
   <div class="field form-group">
@@ -27,8 +37,59 @@
   </div>
 
   <div class="field form-group">
-    <%= form.label :color %>
-    <%= form.number_field :color, class: "form-control" %>
+    <%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :white %>
+      白
+    <% end %>
+    <%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :black %>
+      黒
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :shilver %>
+      シルバー
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :red %>
+      赤
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :blue %>
+      青
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :green %>
+      緑
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :ivory %>
+      アイボリー
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :pink %>
+      ピンク
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :brown %>
+      茶色
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :skyblue %>
+      水色
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :opwhite %>
+      白（オプション）
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :twotone %>
+      ２トーン
+  　<% end %>
+  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
+      <%= form.radio_button :color, :optwotone %>
+      ２トーン（オプション）
+  　<% end %>
+
   </div>
 
   <div class="actions">

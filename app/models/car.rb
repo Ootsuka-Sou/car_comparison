@@ -2,6 +2,7 @@ class Car < ApplicationRecord
     validates :name, presence: true
     validates :money, presence: true
     validates :color, presence: true
+    validates :grade, presence: true
     
     enum name: {
         spacia: 0,

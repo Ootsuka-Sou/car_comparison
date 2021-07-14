@@ -92,46 +92,10 @@
   </div>
   
   <div class="field form-group">
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.select :grade, :spacia_HYBRID_G %>
-      スペーシア　HYBRID G
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :spacia_HYBRID_X %>
-      スペーシア　HYBRID X
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :tanto_L %>
-      タント　L
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :tanto_X %>
-      タント　X
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :tanto_X_turbo %>
-      タント　Xターボ
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :n_box_G %>
-      N-BOX　G
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :n_box_L %>
-      N-BOX　L
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :n_box_EX %>
-      N-BOX　EX
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :n_box_L_turbo %>
-      N-BOX　Lターボ
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :grade, :n_box_EX_turbo %>
-      N-BOX　EXターボ
-    <% end %>
+    <%= form.select :grade, [
+                    ['spacia_HYBRID_G', 'spacia_HYBRID_G'],
+                    ['sample2', 'sample2'], 
+                    ['sample3', 'sample3']] %>
   </div>
 
   <div class="actions">

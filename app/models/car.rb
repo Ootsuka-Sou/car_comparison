@@ -26,18 +26,18 @@ class Car < ApplicationRecord
     optwotone: 12
   }, _prefix: true
   
-    enum grade: {
-        spacia_HYBRID_G: 0,
-        spacia_HYBRID_X: 1,
-        tanto_L: 2,
-        tanto_X: 3,
-        tanto_X_turbo: 4,
-        n_box_G: 5,
-        n_box_L: 6,
-        n_box_EX: 7,
-        n_box_L_turbo: 8,
-        n_box_EX_turbo: 9
-    },_prefix: true
+    # enum grade: {
+    #     spacia_HYBRID_G: 0,
+    #     spacia_HYBRID_X: 1,
+    #     tanto_L: 2,
+    #     tanto_X: 3,
+    #     tanto_X_turbo: 4,
+    #     n_box_G: 5,
+    #     n_box_L: 6,
+    #     n_box_EX: 7,
+    #     n_box_L_turbo: 8,
+    #     n_box_EX_turbo: 9
+    # },_prefix: true
     
 
 end

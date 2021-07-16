@@ -1,4 +1,7 @@
 class Car < ApplicationRecord
+    
+    mount_uploader :image, ImageUploader
+    
     validates :name, presence: true
     validates :money, presence: true
     validates :color, presence: true

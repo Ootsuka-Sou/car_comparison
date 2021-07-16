@@ -70,3 +70,7 @@ gem 'jquery-rails'
 
 # devise
 gem 'devise', '~> 4.2'
+
+gem 'carrierwave'
+
+# gem 'rmagick'

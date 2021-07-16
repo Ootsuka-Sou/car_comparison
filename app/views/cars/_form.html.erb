@@ -32,8 +32,9 @@
   </div>
 
   <div class="field form-group">
-    <%= form.label :image %>
-    <%= form.text_field :image, class: "form-control" %>
+    <%= form.label "画像をアップロード" %>
+    <br>
+    <%= form.file_field :image %>
   </div>
 
   <div class="field form-group">
@@ -94,8 +95,16 @@
   <div class="field form-group">
     <%= form.select :grade, [
                     ['spacia_HYBRID_G', 'spacia_HYBRID_G'],
-                    ['sample2', 'sample2'], 
-                    ['sample3', 'sample3']] %>
+                    ['spacia_HYBRID_X', 'spacia_HYBRID_X'], 
+                    ['tanto_L', 'tanto_L'],
+                    ['tanto_X', 'tanto_X'],
+                    ['tanto_X_turbo', 'tanto_X_turbo'],
+                    ['n_box_G', 'n_box_G'],
+                    ['n_box_L', 'n_box_L'],
+                    ['n_box_EX', 'n_box_EX'],
+                    ['n_box_L_turbo', 'n_box_L_turbo'],
+                    ['n_box_EX_turbo', 'n_box_EX_turbo']
+                    ] %>
   </div>
 
   <div class="actions">

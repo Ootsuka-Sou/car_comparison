@@ -73,4 +73,8 @@ gem 'devise', '~> 4.2'
 
 gem 'carrierwave'
 
-# gem 'rmagick'
+#gem 'rmagick'
+
+gem 'fog-aws'
+
+gem 'dotenv-rails'

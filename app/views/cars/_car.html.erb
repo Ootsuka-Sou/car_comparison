@@ -4,7 +4,7 @@
     <p class="card-text"><%= car.color %></p>
     <p class="card-text"><%= car.money %></p>
     <p class="card-text"><%= car.grade %></p>
-    <!--<p><%= image_tag car.image.url %></p>-->
+    <p><%= image_tag car.image.url, :size =>'320x320' %></p>
     <%= link_to 'Show', car, class: "btn btn-outline-primary" %>
     <%= link_to 'Edit', edit_car_path(car), class: "btn btn-outline-primary" %>
     <%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>

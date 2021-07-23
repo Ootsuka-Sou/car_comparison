@@ -13,6 +13,39 @@ class Car < ApplicationRecord
         tanto: 2
     },_prefix: true
     
+    # enum money: {
+    #     tantoL: 0,
+    #     tantoLop: 1,
+    #     spaciaG: 2,
+    #     spaciaGop: 3,
+    #     nboxG: 4,
+    #     nboxGop: 5,
+    #     nboxGoppuls: 6,
+    #     tantoX: 7,
+    #     tantoXop: 8,
+    #     spaciaX: 9,
+    #     spaciaXop: 10,
+    #     tantoX2: 11,
+    #     nboxL: 12,
+    #     tantoX2plus: 13,
+    #     spaciaX2: 14,
+    #     nboxLop: 15,
+    #     nboxLopplus: 16,
+    #     tantoXturbo: 17,
+    #     nboxEX: 18,
+    #     tantoXturboop: 19,
+    #     nboxEXop: 20,
+    #     tantoXturbo2: 21,
+    #     nboxEXopplus: 22,
+    #     tantoXturbo2plus: 23,
+    #     nboxLturbo: 24,
+    #     nboxLturboop: 25,
+    #     nboxEXturbo: 26,
+    #     nboxLturboopplus: 27,
+    #     nboxEXturboop: 28,
+    #     nboxEXturboopplus: 29
+    # },_prefix: true
+    
     enum color: {
     white: 0,
     black: 1,
@@ -24,9 +57,9 @@ class Car < ApplicationRecord
     pink: 7,
     brown: 8,
     skyblue: 9,
-    opwhite: 10,
+    option_color: 10,
     twotone: 11,
-    optwotone: 12
+    option_twotone: 12
   }, _prefix: true
   
     # enum grade: {

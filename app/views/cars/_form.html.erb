@@ -27,8 +27,20 @@
   </div>
 
   <div class="field form-group">
-    <%= form.label :money %>
-    <%= form.number_field :money, class: "form-control" %>
+    
+    <%= form.select :money, [
+                    ['スペーシアG', '1,380,500円'],
+                    ['スペーシアG　オプションカラー', '1,402,500円'], 
+                    ['スペーシアX', '1,524,600円'],
+                    ['スペーシアX　オプションカラー', '1,546,600円'],
+                    ['スペーシアX　2トーン', '1,568,600円'],
+                    ['1491600', '1461900'],
+                    ['1483900', '1483900'],
+                    ['1490500', '1518000'],
+                    ['1524600', '1524600'],
+                    ['1546600', '1546600']
+                    ] %>
+    
   </div>
 
   <div class="field form-group">
@@ -79,15 +91,15 @@
       水色
   　<% end %>
   　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :opwhite %>
-      白（オプション）
+      <%= form.radio_button :color, :option_color %>
+      オプションカラー
   　<% end %>
   　<%= form.label(:public, for: nil, class:'post-status__label') do %>
       <%= form.radio_button :color, :twotone %>
       ２トーン
   　<% end %>
   　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :optwotone %>
+      <%= form.radio_button :color, :option_twotone %>
       ２トーン（オプション）
   　<% end %>
   </div>

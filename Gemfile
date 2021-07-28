@@ -78,3 +78,5 @@ gem 'carrierwave'
 gem 'fog-aws'
 
 gem 'dotenv-rails'
+
+gem 'chartkick'

@@ -1,9 +1,9 @@
 <div class="card mb-3">
   <div class="card-body">
-    <p class="card-title"><%= car.name %></p>
-    <p class="card-text"><%= car.color %></p>
-    <p class="card-text"><%= car.money %></p>
-    <p class="card-text"><%= car.grade %></p>
+    <p class="card-title">車種：<%= car.name %></p>
+    <p class="card-text">ボディカラー：<%= car.color %></p>
+    <p class="card-text">車両本体価格：<%= car.money %>円</p>
+    <p class="card-text">グレード：<%= car.grade %></p>
     <p><%= image_tag car.image.url, :size =>'240x240' %></p>
     <%= link_to 'Show', car, class: "btn btn-outline-primary" %>
     <%= link_to 'Edit', edit_car_path(car), class: "btn btn-outline-primary" %>

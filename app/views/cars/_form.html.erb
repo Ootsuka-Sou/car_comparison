@@ -13,15 +13,15 @@
 
   <div class="field form-group">
     <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :name, :spacia %>
+      <%= form.radio_button :name, :Spacia %>
       スペーシア
     <% end %>
     <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :name, :n_box %>
+      <%= form.radio_button :name, :N_BOX %>
       N-BOX
     <% end %>
     <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :name, :tanto %>
+      <%= form.radio_button :name, :Tanto %>
       タント
     <% end %>
   </div>
@@ -29,16 +29,36 @@
   <div class="field form-group">
     
     <%= form.select :money, [
-                    ['スペーシアG', '1,380,500円'],
-                    ['スペーシアG　オプションカラー', '1,402,500円'], 
-                    ['スペーシアX', '1,524,600円'],
-                    ['スペーシアX　オプションカラー', '1,546,600円'],
-                    ['スペーシアX　2トーン', '1,568,600円'],
-                    ['1491600', '1461900'],
-                    ['1483900', '1483900'],
-                    ['1490500', '1518000'],
-                    ['1524600', '1524600'],
-                    ['1546600', '1546600']
+                    ['スペーシアG', 1380500],
+                    ['スペーシアG　オプションカラー', 1402500], 
+                    ['スペーシアX', 1524600],
+                    ['スペーシアX　オプションカラー', 1546600],
+                    ['スペーシアX　2トーン', 1568600],
+                    ['N-BOX G', 1428900],
+                    ['N-BOX G オプションカラー', 1461900],
+                    ['N-BOX G プレミアムカラー', 1483900],
+                    ['N-BOX L',1559800],
+                    ['N-BOX L オプションカラー', 1592800],
+                    ['N-BOX L プレミアムカラー', 1614800],
+                    ['N-BOX Lターボ', 1758900],
+                    ['N-BOX Lターボ オプションカラー', 1791900],
+                    ['N-BOX Lターボ プレミアムカラー', 1813900],
+                    ['N-BOX EX', 1658800],
+                    ['N-BOX EX オプションカラー', 1691800],
+                    ['N-BOX EX プレミアムカラー', 1713800],
+                    ['N-BOX EXターボ', 1809500],
+                    ['N-BOX EXターボ オプションカラー', 1842500],
+                    ['N-BOX EXターボ プレミアムカラー', 1864500],
+                    ['タントL', 1342000],
+                    ['タントL オプションカラー', 1369500],
+                    ['タントX', 1490500],
+                    ['タントX オプションカラー', 1518000],
+                    ['タントX 2トーン', 1556500],
+                    ['タントX オプション2トーン', 1567500],
+                    ['タントXターボ', 1644500],
+                    ['タントXターボ オプションカラー', 1672000],
+                    ['タントXターボ 2トーン', 1710500],
+                    ['タントXターボ オプション2トーン', 1721500]
                     ] %>
     
   </div>
@@ -106,16 +126,16 @@
   
   <div class="field form-group">
     <%= form.select :grade, [
-                    ['spacia_HYBRID_G', 'spacia_HYBRID_G'],
-                    ['spacia_HYBRID_X', 'spacia_HYBRID_X'], 
-                    ['tanto_L', 'tanto_L'],
-                    ['tanto_X', 'tanto_X'],
-                    ['tanto_X_turbo', 'tanto_X_turbo'],
-                    ['n_box_G', 'n_box_G'],
-                    ['n_box_L', 'n_box_L'],
-                    ['n_box_EX', 'n_box_EX'],
-                    ['n_box_L_turbo', 'n_box_L_turbo'],
-                    ['n_box_EX_turbo', 'n_box_EX_turbo']
+                    ['Spacia HYBRID G', 'Spacia HYBRID G'],
+                    ['Spacia HYBRID X', 'Spacia HYBRID X'], 
+                    ['Tanto L', 'Tanto L'],
+                    ['Tanto X', 'Tanto X'],
+                    ['Tanto X ターボ', 'Tanto X ターボ'],
+                    ['N-BOX G', 'N-BOX G'],
+                    ['N-BOX L', 'N-BOX L'],
+                    ['N-BOX EX', 'N-BOX EX'],
+                    ['N-BOX L ターボ', 'N-BOX L ターボ'],
+                    ['N-BOX EX ターボ', 'N-BOX EX ターボ']
                     ] %>
   </div>
 

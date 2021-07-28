@@ -8,9 +8,9 @@ class Car < ApplicationRecord
     validates :grade, presence: true
     
     enum name: {
-        spacia: 0,
-        n_box: 1,
-        tanto: 2
+        Spacia: 0,
+        N_BOX: 1,
+        Tanto: 2
     },_prefix: true
     
     # enum money: {
@@ -19,7 +19,7 @@ class Car < ApplicationRecord
     #     spaciaG: 2,
     #     spaciaGop: 3,
     #     nboxG: 4,
-    #     nboxGop: 5,
+    #     nboxGop: 5
     #     nboxGoppuls: 6,
     #     tantoX: 7,
     #     tantoXop: 8,

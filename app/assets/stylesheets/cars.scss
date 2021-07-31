@@ -1,3 +1,14 @@
 // Place all the styles related to the cars controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.car_comparison {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f0fff0;
+}
+
+.main {
+    display: flex;
+}

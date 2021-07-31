@@ -24,7 +24,7 @@ class CarsController < ApplicationController
     @car = Car.new(car_params)
 
     if @car.save
-      redirect_to @car, notice: 'Car was successfully created.'
+      redirect_to @car, notice: '作成しました！'
     else
       render :new
     end
@@ -33,7 +33,7 @@ class CarsController < ApplicationController
   # PATCH/PUT /cars/1
   def update
     if @car.update(car_params)
-      redirect_to @car, notice: 'Car was successfully updated.'
+      redirect_to @car, notice: '更新しました！'
     else
       render :edit
     end
@@ -42,7 +42,7 @@ class CarsController < ApplicationController
   # DELETE /cars/1
   def destroy
     @car.destroy
-    redirect_to cars_url, notice: 'Car was successfully destroyed.'
+    redirect_to cars_url, notice: '削除しました！'
   end
 
   private

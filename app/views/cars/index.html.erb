@@ -1,12 +1,9 @@
-
-
-<h1>Cars</h1>
-
-<%= render @cars %>
-
 <div>
-<%= column_chart Car.group(:grade).sum(:money) %>
+    <h1 class="car_comparison">比較画面</h1>
+    <div class="main">
+        <%= render @cars %>
+    </div>
+    <%= bar_chart Car.group(:grade).sum(:money), xtitle: "車両本体価格" %>
+    <!-- /rails/info でパスが見れる -->
+    <%= link_to '新規登録', new_car_path, class: "btn btn-info" %>
 </div>
-    
-<!-- /rails/info でパスが見れる -->
-<%= link_to 'New Car', new_car_path %>

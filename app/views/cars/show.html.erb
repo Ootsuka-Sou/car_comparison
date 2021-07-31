@@ -1,6 +1,9 @@
-
-
-<%= render @car %>
-
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+<div>
+    <div class="main">
+        <%= render @car %>
+    </div>
+    <div>
+        <%= link_to '編集', edit_car_path(@car), class: "btn btn-success" %> |
+        <%= link_to '戻る', cars_path, class:"btn btn-dark" %>
+    </div>
+</div>

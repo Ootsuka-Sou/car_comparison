@@ -12,20 +12,47 @@
   <% end %>
 
   <div class="field form-group">
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :name, :Spacia %>
-      スペーシア
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :name, :N_BOX %>
-      N-BOX
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :name, :Tanto %>
-      タント
-    <% end %>
+    <%= form.select :name, [
+                    ['スペーシア', 'スペーシア'],
+                    ['N-BOX', 'N-BOX'], 
+                    ['タント', 'タント']
+                    ], {include_blank: '車種を選択して下さい'} %>
   </div>
 
+  <div class="field form-group">
+    <%= form.select :color, [
+                    ['ホワイト', 'ホワイト'],
+                    ['ブラック', 'ブラック'], 
+                    ['シルバー', 'シルバー'],
+                    ['レッド', 'レッド'],
+                    ['ブルー', 'ブルー'],
+                    ['グリーン', 'グリーン'],
+                    ['アイボリー', 'アイボリー'],
+                    ['ピンク', 'ピンク'],
+                    ['ブラウン', 'ブラウン'],
+                    ['スカイブルー', 'スカイブルー'],
+                    ['オプションカラー', 'オプションカラー'],
+                    ['プレミアムカラー', 'プレミアムカラー'],
+                    ['２トーン', '２トーン'],
+                    ['オプション２トーン', 'オプション２トーン']
+                    ], {include_blank: 'ボディカラーを選択して下さい'} %>
+  </div>
+  
+  <div class="field form-group">
+    <%= form.select :grade, [
+                    ['Spacia HYBRID G', 'Spacia HYBRID G'],
+                    ['Spacia HYBRID X', 'Spacia HYBRID X'], 
+                    ['Tanto L', 'Tanto L'],
+                    ['Tanto X', 'Tanto X'],
+                    ['Tanto X ターボ', 'Tanto X ターボ'],
+                    ['N-BOX G', 'N-BOX G'],
+                    ['N-BOX L', 'N-BOX L'],
+                    ['N-BOX EX', 'N-BOX EX'],
+                    ['N-BOX L ターボ', 'N-BOX L ターボ'],
+                    ['N-BOX EX ターボ', 'N-BOX EX ターボ']
+                    ], {include_blank: 'グレードを選択して下さい'} %>
+  </div>
+  
   <div class="field form-group">
     
     <%= form.select :money, [
@@ -59,87 +86,19 @@
                     ['タントXターボ オプションカラー', 1672000],
                     ['タントXターボ 2トーン', 1710500],
                     ['タントXターボ オプション2トーン', 1721500]
-                    ] %>
+                    ],{include_blank: '価格を選択して下さい'} %>
     
   </div>
-
+  
   <div class="field form-group">
     <%= form.label "画像をアップロード" %>
     <br>
     <%= form.file_field :image %>
   </div>
-
-  <div class="field form-group">
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :white %>
-      白
-    <% end %>
-    <%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :black %>
-      黒
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :shilver %>
-      シルバー
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :red %>
-      赤
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :blue %>
-      青
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :green %>
-      緑
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :ivory %>
-      アイボリー
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :pink %>
-      ピンク
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :brown %>
-      茶色
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :skyblue %>
-      水色
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :option_color %>
-      オプションカラー
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :twotone %>
-      ２トーン
-  　<% end %>
-  　<%= form.label(:public, for: nil, class:'post-status__label') do %>
-      <%= form.radio_button :color, :option_twotone %>
-      ２トーン（オプション）
-  　<% end %>
-  </div>
-  
-  <div class="field form-group">
-    <%= form.select :grade, [
-                    ['Spacia HYBRID G', 'Spacia HYBRID G'],
-                    ['Spacia HYBRID X', 'Spacia HYBRID X'], 
-                    ['Tanto L', 'Tanto L'],
-                    ['Tanto X', 'Tanto X'],
-                    ['Tanto X ターボ', 'Tanto X ターボ'],
-                    ['N-BOX G', 'N-BOX G'],
-                    ['N-BOX L', 'N-BOX L'],
-                    ['N-BOX EX', 'N-BOX EX'],
-                    ['N-BOX L ターボ', 'N-BOX L ターボ'],
-                    ['N-BOX EX ターボ', 'N-BOX EX ターボ']
-                    ], {include_blank: 'グレードを選択して下さい'} %>
-  </div>
-
+　
+　<h5>※グレードを選択する際は重複しないようにご注意下さい。</h5>
+　
   <div class="actions">
-    <%= form.submit class: "btn btn-primary" %>
+    <%= form.submit "新規登録", class: "btn btn-secondary" %>
   </div>
 <% end %>

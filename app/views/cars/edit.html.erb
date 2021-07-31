@@ -1,5 +1,8 @@
-<h1>Editing Car</h1>
+<div>
+    <h1 class="car_comparison">編集</h1>
+    <div class="main">
+        <%= render 'form', car: @car %>
+    </div>
 
-<%= render 'form', car: @car %>
-
-<%= link_to 'Back', cars_path %>
+    <%= link_to '戻る', cars_path, class: "btn btn-dark" %>
+</div>

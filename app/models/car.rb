@@ -7,11 +7,11 @@ class Car < ApplicationRecord
     validates :color, presence: true
     validates :grade, presence: true
     
-    enum name: {
-        Spacia: 0,
-        N_BOX: 1,
-        Tanto: 2
-    },_prefix: true
+    # enum name: {
+    #     Spacia: 0,
+    #     N_BOX: 1,
+    #     Tanto: 2
+    # },_prefix: true
     
     # enum money: {
     #     tantoL: 0,
@@ -46,21 +46,21 @@ class Car < ApplicationRecord
     #     nboxEXturboopplus: 29
     # },_prefix: true
     
-    enum color: {
-    white: 0,
-    black: 1,
-    shilver: 2,
-    red: 3,
-    blue: 4,
-    green: 5,
-    ivory: 6,
-    pink: 7,
-    brown: 8,
-    skyblue: 9,
-    option_color: 10,
-    twotone: 11,
-    option_twotone: 12
-  }, _prefix: true
+#     enum color: {
+#     white: 0,
+#     black: 1,
+#     shilver: 2,
+#     red: 3,
+#     blue: 4,
+#     green: 5,
+#     ivory: 6,
+#     pink: 7,
+#     brown: 8,
+#     skyblue: 9,
+#     option_color: 10,
+#     twotone: 11,
+#     option_twotone: 12
+#   }, _prefix: true
   
     # enum grade: {
     #     spacia_HYBRID_G: 0,

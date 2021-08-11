@@ -4,7 +4,7 @@
     <p class="card-text">ボディカラー：<%= car.color %></p>
     <p class="card-text">グレード：<%= car.grade %></p>
     <p class="card-text">車両本体価格：<%= car.money %>円</p>
-    <p><%= image_tag car.image.url, :size =>'240x240' %></p>
+    <p><%= image_tag car.image.url, :size =>'360x240' %></p>
     <%= link_to '確認', car, class: "btn btn-primary" %>
     <%= link_to '編集', edit_car_path(car), class: "btn btn-success" %>
     <%= link_to '削除', car, method: :delete, data: { confirm: '削除してもよろしいでしょうか？' }, class: "btn btn-danger" %>

@@ -23,12 +23,19 @@ main {
     overflow-y: scroll;
     overflow-x: scroll;
     padding-top: 60px;
+    font-family: 'Kosugi Maru', sans-serif;
 }
 
 header {
-    height: 80px;
+    height: 60px;
 }
 
 footer {
     height: 60px;
 }
+
+.kosugi {
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');

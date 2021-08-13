@@ -2,25 +2,14 @@
 
 軽自動車の価格を比較するアプリです。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#DEMO
 
-Things you may want to cover:
+#特徴
 
-* Ruby version
+#使用技術
 
-* System dependencies
+#機能一覧
 
-* Configuration
+#開発に意識したこと
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#今後の展開
